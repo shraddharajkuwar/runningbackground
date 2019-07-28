@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>	
+	<link rel="stylesheet" type="text/css" href="loginform.css">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+	<div class="login">
+		<form class="user" onsubmit="change()">
+			<div>
+				<i class="fa fa-envelope" id="envelope" ></i>
+				<input type="text" placeholder="UserName">
+			</div><br>
+			<div>
+				<i class="fa fa-lock" id="key" style="font-size: 20px"></i>
+
+				<input type="password" placeholder="Password" id="pass">
+
+				<span class="eye" onclick="display()">
+					<i class="fa fa-eye" id="show"><caption>Show</caption></i>
+					<i class="fa fa-eye-slash" id="hide"><caption>Hide</caption></i>
+				</span>
+			</div><br>
+			<div>
+				<input type="submit" value="Login" id="btn">
+			</div>
+		</form>
+	    </div>
+
+
+	    <script type="text/javascript">
+	    	function display() {
+	    		var x=document.getElementById('pass');
+	    		var y=document.getElementById('show');
+	    		var z=document.getElementById('hide');
+
+	    		if (x.type ==='password') {
+	    			x.type="text";
+	    			y.style.display= "none";
+	    			z.style.display= "block";
+	    		}
+	    		else{
+	    			x.type="password";	    			
+	    			y.style.display= "block";
+	    			z.style.display="none";
+
+	    		}
+
+	    	}
+	    	function change(){
+	    		var a=document.getElementById('btn');
+	    		a.style.BackgroundColor="white";
+	    	}
+
+
+	    	
+
+	    </script>
+
+</body>
+</html>

@@ -1,0 +1,189 @@
+
+body{
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	font-family: serif;
+}
+.cloud{
+	width: 100%;
+	height: 100vh;
+	background-image: url('cloud.jpg');
+	background-size: cover;
+	position: relative;
+	background-position: center;
+}
+.road{
+	width:500%;
+	height: 200px;
+	bottom: 0;
+	background-image: url('road.jpg');
+	position: absolute;
+	background-repeat: repeat-x;
+	background-size: cover;
+	z-index: 1;
+	animation: road 8s  linear infinite;
+	display: block;
+	}
+@keyframes road{
+	100%{transform: translateX(-3400px);}
+}
+.city{
+	height: 330px;
+	width: 500%;
+	background-image: url('City-PNG-Transparent-Image.png');
+    bottom: 200px;
+	position: absolute;
+	z-index: 1;
+	display: block;
+	animation: city 30s linear infinite;
+}
+
+@keyframes city{
+	100%{transform: translateX(-3400px);}
+}
+
+.logo{
+	height: 200px;
+	width: 400px;
+	position: absolute;
+	left: 30%;
+	top: 60%;
+	z-index: 2;
+}
+.logo img{
+	height: 200px;
+	width: 100%;
+}
+
+.wheel{
+	position: absolute;
+	z-index: 2;
+	width: 200px;
+	height: 65px;
+	bottom: 100px;
+	left: 50%;
+	transform: translateX(-50%);	
+}
+.wheel img{
+	width: 65px;
+	height: 65px;
+	animation: wheels .8s linear infinite;
+}
+.wheel-one{
+	left: -123px;
+	top: 10px;
+	position: absolute;
+}
+.wheel-two{
+	left: 113px;
+	top: 10px;
+	position: absolute;
+}
+@keyframes wheels{
+	100%{transform: rotate(360deg);	}
+}
+
+.login{
+	background-color: rgba(0,0,0,0.7);
+	height: 300px;
+	width: 300px;	
+	position: absolute;
+	margin-top: 3%;
+	border-radius: 10%;
+	z-index: 2;
+	box-shadow: 20px 20px rgba(0,0,0,.9); 
+}
+.user{	
+	padding: 10px;
+	text-align: center;
+	z-index: 2;
+}
+.user input{
+	border: none;
+	outline: none;
+	width: 70%;
+	padding: 10px;
+	color: white;
+	font-size: 20px;
+	border-bottom: 2px solid white;
+	background-color: transparent;
+}
+
+::placeholder{
+	color: white;
+	font-size: 17px;
+}
+#btn{
+	border: 2px solid white;
+	padding: 10px;
+}
+#btn:hover{
+	background-color: rgba(255,255,255,0.7);
+	cursor:pointer;
+}
+.fa{color: white;}
+.eye{
+	position: absolute;
+	color: white;
+}
+.eye caption{
+	font-size: 30px;
+	color: white;
+	cursor: pointer;
+}
+.eye caption:hover{
+	color: white;
+}
+
+.create a{
+	color: white;
+	padding-bottom: 10px;
+	letter-spacing: 2px;}
+#newuser{
+	padding-left: 20%;
+    float: left;}
+#forgetpass{
+	padding-right: 17%;
+    float: right;
+}
+
+input:focus{
+	width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
